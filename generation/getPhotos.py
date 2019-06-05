@@ -1,5 +1,6 @@
 import flickrapi
 import pickle
+import time
 
 class HaroldAlbum:
     def __init__(self, id):
@@ -74,8 +75,7 @@ def buildEmptyAlbums(flickr,haroldID):
     return albums
 
 def fillAlbums(flickr,haroldID,albums):
-    #currently I only fill the first 10 albums
-    for album in albums[:10]:
+    for album in albums:
         images = flickr.photosets.getPhotos(photoset_id=album.id, user_id=haroldID)['photoset']['photo']
         photos = []
         for image in images:
@@ -85,6 +85,9 @@ def fillAlbums(flickr,haroldID,albums):
             photos.append(photo)
         album.setPhotos(photos)
         print "filled album: " + album.title + " with " + str(len(album.photos)) + " photos"
+
+        #sleeps 15 seconds to avoid spamming the api too much
+        time.sleep(15)
     return albums
 
 def main():
