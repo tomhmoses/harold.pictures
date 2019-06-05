@@ -54,10 +54,10 @@ def main():
     setAlbumPages(albums)
 
 def setPortfolioPage(albums):
-    f = open("gallery-item-template.html", "rt")
+    f = open("templates/gallery-item-template.html", "rt")
     itemTemplate = f.read()
     f.close()
-    f = open("portfolio-template.html", "rt")
+    f = open("templates/portfolio-template.html", "rt")
     portfolioTemplate = f.read()
     f.close()
     galleryItems = ""
@@ -77,10 +77,10 @@ def setPortfolioPage(albums):
     f.close()
 
 def setAlbumPages(albums):
-    f = open("single-gallery-item-template.html", "rt")
+    f = open("templates/single-gallery-item-template.html", "rt")
     itemTemplate = f.read()
     f.close()
-    f = open("portfolio-single-template.html", "rt")
+    f = open("templates/portfolio-single-template.html", "rt")
     portfolioSingleTemplate = f.read()
     f.close()
     for count in range(len(albums)):
