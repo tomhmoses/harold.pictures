@@ -3,11 +3,30 @@
     <head>
         <!--=============== basic  ===============-->
         <meta charset="UTF-8">
-        <title>Kotlis Photography - Creative  Responsive Photography  Template</title>
+        <title><!-- TITLE --> - Harold Moses</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta name="robots" content="index, follow"/>
         <meta name="keywords" content=""/>
-        <meta name="description" content=""/>
+        <meta name="description" content="<!-- DESCRIPTION -->"/>
+        <!--=============== social  ===============-->
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" value="summary">
+
+        <!-- Open Graph data -->
+        <meta property="og:title" content="<!-- TITLE --> - Harold Moses" />
+        <meta property="og:description" content="<!-- DESCRIPTION -->"/>
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://harold.tmos.es/album-<!-- ID -->.html" />
+        <meta property="og:image" content="<!-- PRIMARYURL -->" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131203296-2"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-131203296-2');
+        </script>
         <!--=============== css  ===============-->	
         <link type="text/css" rel="stylesheet" href="css/reset.css">
         <link type="text/css" rel="stylesheet" href="css/plugins.css">
@@ -113,31 +132,12 @@
                             <div class="clearfix"></div>
                             <p><!-- DESCRIPTION --></p>
                         </div>
-                        <div class="caption-wrap fl-wrap det-anim">
-                            <ul>
-                                <li>
-                                    <span>Location</span>
-                                    <a href="#">NY , USA</a>
-                                </li>
-                                <li>
-                                    <span>Category</span>
-                                    <a href="#">Travel</a>
-                                </li>
-                                <li>
-                                    <span>Model</span>
-                                    <a href="#">Austin Onishe</a>
-                                </li>
-                                <li>
-                                    <span>Camera</span>
-                                    <a href="#">Canon 6d</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="#" class="btn fl-btn det-anim" target="_blank">View Project</a>
+                        <!-- maybe add a map here -->
+                        <a href="https://www.flickr.com/photos/mosesharold/albums/<!-- ID -->" class="btn fl-btn det-anim" target="_blank">View on Flickr</a>
                         <div class="content-nav det-anim">
                             <ul>
-                                <li><a href="<!-- PREV ALBUM LINK -->" class="ln"><i class="fal fa-angle-left"></i><span class="tooltip">Prev - Project Title</span></a></li>
-                                <li><a href="<!-- NEXT ALBUM LINK -->" class="rn"><i class="fal fa-angle-right"></i><span class="tooltip">Next - Project Title</span></a></li>
+                                <li><a href="<!-- PREV ALBUM LINK -->" class="ln"><i class="fal fa-angle-left"></i><span class="tooltip">Prev - <!-- PREV ALBUM TITLE --></span></a></li>
+                                <li><a href="<!-- NEXT ALBUM LINK -->" class="rn"><i class="fal fa-angle-right"></i><span class="tooltip">Next - <!-- NEXT ALBUM TITLE --></span></a></li>
                             </ul>
                         </div>
                     </div>
