@@ -93,10 +93,12 @@ def setAlbumPages(albums):
         portfolioSingle = portfolioSingle.replace("<!-- single-gallery-items-go-here-->", galleryItems)
         print "-"*50
         print albums[count].title
-        print "album-" + albums[count].id + ".html"
-        print galleryItems
+        print "http://harold.tmos.es/album-" + albums[count].id + ".html"
+        #print galleryItems
         portfolioSingle = portfolioSingle.replace("<!-- TITLE -->", albums[count].title)
         portfolioSingle = portfolioSingle.replace("<!-- DESCRIPTION -->", albums[count].description)
+        portfolioSingle = portfolioSingle.replace("<!-- ID -->", albums[count].id)
+        portfolioSingle = portfolioSingle.replace("<!-- PRIMARYURL -->", albums[count].coverPhoto.source)
         portfolioSingle = portfolioSingle.replace("<!-- PREV ALBUM LINK -->", "album-" + albums[count-1].id + ".html")
         portfolioSingle = portfolioSingle.replace("<!-- NEXT ALBUM LINK -->", "album-" + albums[(count+1)%len(albums)].id + ".html")
         portfolioSingle = portfolioSingle.replace("<!-- PREV ALBUM TITLE -->", albums[count-1].title)
