@@ -99,6 +99,8 @@ def setAlbumPages(albums):
         portfolioSingle = portfolioSingle.replace("<!-- DESCRIPTION -->", albums[count].description)
         portfolioSingle = portfolioSingle.replace("<!-- PREV ALBUM LINK -->", "album-" + albums[count-1].id + ".html")
         portfolioSingle = portfolioSingle.replace("<!-- NEXT ALBUM LINK -->", "album-" + albums[(count+1)%len(albums)].id + ".html")
+        portfolioSingle = portfolioSingle.replace("<!-- PREV ALBUM TITLE -->", albums[count-1].title)
+        portfolioSingle = portfolioSingle.replace("<!-- NEXT ALBUM TITLE -->", albums[(count+1)%len(albums)].title)
         f = open("album-pages/album-" + albums[count].id + ".html", "w+")
         f.write(portfolioSingle)
         f.close()
