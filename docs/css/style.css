@@ -7,6 +7,18 @@
   Last change: 01/02/2019 ]
 /*-------------Fonts---------------------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Ek+Mukta:200,300,400,500,600,700,800&subset=devanagari,latin-ext');
+/*------Custom------------------------------------------------*/
+@media (max-width: 1065px){
+	.for-large{
+		display: none;
+	}
+}
+@media (min-width: 1065px){
+	.for-small{
+		display: none;
+	}
+}
+
 /*-------------General Style---------------------------------------*/
 
 html {
