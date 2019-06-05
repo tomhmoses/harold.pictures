@@ -95,8 +95,8 @@ def setAlbumPages(albums):
         print albums[count].title
         print "http://harold.tmos.es/album-" + albums[count].id + ".html"
         #print galleryItems
-        portfolioSingle = portfolioSingle.replace("<!-- TITLE -->", albums[count].title)
-        portfolioSingle = portfolioSingle.replace("<!-- DESCRIPTION -->", albums[count].description)
+        portfolioSingle = portfolioSingle.replace("<!-- TITLE -->", albums[count].title.replace("\"","'"))
+        portfolioSingle = portfolioSingle.replace("<!-- DESCRIPTION -->", albums[count].description.replace("\"","'"))
         portfolioSingle = portfolioSingle.replace("<!-- ID -->", albums[count].id)
         portfolioSingle = portfolioSingle.replace("<!-- PRIMARYURL -->", albums[count].coverPhoto.source)
         portfolioSingle = portfolioSingle.replace("<!-- PREV ALBUM LINK -->", "album-" + albums[count-1].id + ".html")
