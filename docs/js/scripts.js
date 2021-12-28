@@ -1191,7 +1191,7 @@ document.addEventListener("DOMContentLoaded", function () {
             var imageObserver = new IntersectionObserver(function (entries, observer) {
                 entries.forEach(function (entry) {
                     if (entry.isIntersecting) {
-                        console.log('WOULD loading image:' + entry.target)
+                        // console.log('WOULD loading image:' + entry.target)
                         var image = entry.target;
                         image.src = image.dataset.src;
                         image.classList.remove("lazy");
