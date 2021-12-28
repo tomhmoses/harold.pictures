@@ -109,6 +109,16 @@ body {
     -webkit-transform: scale(1);
   }
 } 
+
+/*--------------Lazy Load--------------------------------------*/
+
+.lazy {
+  background: #F1F1FA;
+  height: 300px;
+  display: block;
+  margin: 10px auto;
+  border: 0;
+}
 /*--------------Typography--------------------------------------*/
 p {
 	font-size: 12px;
@@ -155,7 +165,7 @@ blockquote p {
 	top: 0;
 	left: 0;
 	z-index: 2;
-	opacity:0;
+	opacity:1;
 }
 .fl-wrap {
 	float: left;
