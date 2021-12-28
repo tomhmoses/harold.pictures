@@ -110,15 +110,7 @@ body {
   }
 } 
 
-/*--------------Lazy Load--------------------------------------*/
 
-.lazy {
-  background: #F1F1FA;
-  height: 300px;
-  display: block;
-  margin: 10px auto;
-  border: 0;
-}
 /*--------------Typography--------------------------------------*/
 p {
 	font-size: 12px;
